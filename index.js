@@ -16,9 +16,9 @@ function deleteFromObjectByKey(recipes, key){
   return newObj;
 }
 
-
-
-function removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName];
-  return playlist;
+function destructivelyDeleteFromObjectByKey(recipes, key) {
+  delete recipes[key];
+  return recipes;
 }
+
+
